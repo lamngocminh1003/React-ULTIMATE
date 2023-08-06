@@ -1,14 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/Home";
+// function App() {
+let App = () => {
+  let x = { name: "Amie" };
+  let y = false;
+  console.log("check y", y);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Hello world with {JSON.stringify(x.name)}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,9 +19,10 @@ function App() {
         >
           Learn React
         </a>
+        <Home />
       </header>
     </div>
   );
-}
+};
 
 export default App;
