@@ -1,0 +1,60 @@
+.hide-show {
+  color: #61dafb;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 20px;
+}
+fieldset {
+  .title-add-product {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  .add-new-product {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 10px 0 10px;
+      width: 60%;
+      min-width: 250px;
+      .input-item {
+        width: 100%;
+        padding: 8px 12px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .label-item {
+        margin-bottom: 5px;
+      }
+    }
+    .item-btn {
+      text-align: center;
+      margin: 10px;
+      .btn {
+        width: 100%;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn-submit {
+        background-color: #4caf50;
+        color: white;
+      }
+      :hover {
+        background-color: #45a049;
+      }
+    }
+  }
+}

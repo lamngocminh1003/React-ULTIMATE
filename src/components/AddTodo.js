@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import _ from "lodash";
+import React from "react";
 const AddToDo = (props) => {
   const { setToDo, handleClickButton, toDo } = props;
   return (
@@ -13,12 +12,10 @@ const AddToDo = (props) => {
           }}
           value={toDo}
         />
+        <button type="button" onClick={() => handleClickButton(toDo)}>
+          Submit
+        </button>{" "}
       </div>
-      <br />
-      <br />
-      <button type="button" onClick={() => handleClickButton(toDo)}>
-        Submit
-      </button>{" "}
       <br />
     </div>
   );

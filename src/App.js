@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Home from "./components/Home";
+import AddNewProduct from "./components/AddNewProduct";
 // function App() {
 let App = () => {
   let x = { name: "Amie" };
@@ -8,19 +9,18 @@ let App = () => {
   console.log("check y", y);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello world with {JSON.stringify(x.name)}</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Home />
-      </header>
+      <div className="content-left">
+        <header className="App-header">
+          <div style={{ textAlign: "center" }}>
+            <img src={logo} className="App-logo" alt="logo" />
+          </div>
+          <p>Hello world with {JSON.stringify(x.name)}</p>
+          <Home />
+        </header>
+      </div>
+      <div className="content-right">
+        <AddNewProduct />
+      </div>
     </div>
   );
 };
