@@ -5,12 +5,14 @@ import Home from "./components/Home";
 import AddNewProduct from "./components/AddNewProduct";
 import Nav from "./components/Navigation/Nav";
 import Page404 from "./components/404Page/Page404";
+import ProductPage from "./ProductsApp/ProductPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Weather from "./components/Weather/Weather";
+import OTP from "./components/OTP/OTP";
+import WeatherByWoeId from "./components/Weather/WeatherByWoeId";
 // function App() {
 let App = () => {
   let x = { name: "Amie" };
-  let y = false;
-  console.log("check y", y);
   return (
     <Router>
       <Nav />
@@ -37,15 +39,17 @@ let App = () => {
           </div>
         </Route>
         <Route path="/product">
-          <Product />
+          <ProductPage />
         </Route>
         <Route path="/weather-app">
-          <div>Weather App</div>
+          <Weather />
         </Route>
-        <Route path="/about">
-          <div>Hello, I'm Amie</div>
+        <Route path="/weather/detail/:woeId">
+          <WeatherByWoeId />
         </Route>
-
+        <Route path="/otp">
+          <OTP />
+        </Route>
         <Route path="*">
           <Page404 />
         </Route>

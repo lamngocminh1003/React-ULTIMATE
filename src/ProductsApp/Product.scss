@@ -2,21 +2,22 @@
   background-color: aliceblue;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   padding: 10px 10px;
   height: 100%;
   .content-left {
-    width: 60%;
+    width: 600px;
     height: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
+    flex: 2;
     .img-up {
       img {
-        width: fit-content;
-        height: 400px;
+        width: 400px;
+        height: auto;
       }
     }
     .img-down {

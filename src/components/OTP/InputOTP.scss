@@ -1,0 +1,87 @@
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  height: 90vh;
+  .otp-form {
+    height: 200px;
+    width: 500px;
+    border: 2px solid rgb(93, 155, 64);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 10px;
+    background-color: rgb(239, 236, 236);
+    .title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 24px;
+      color: #333;
+    }
+    .otp-count-down {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .otp-input {
+      font-size: 26px;
+      .input-customize {
+        width: 2rem !important;
+        height: 2rem;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        outline: none;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .otp-btn {
+      display: flex;
+      gap: 20px;
+      .btn {
+        padding: 10px 15px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 2px;
+        cursor: pointer;
+        &.btn-clear {
+          background-color: rgb(104, 181, 27);
+          border: 2px solid rgb(104, 181, 27);
+        }
+        &.btn-get-otp {
+          background-color: rgb(228, 120, 43);
+          border: 2px solid rgb(228, 120, 43);
+        }
+      }
+    }
+  }
+  .general-otp-container {
+    .btn {
+      padding: 10px 15px;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 2px;
+      cursor: pointer;
+      &.general-otp-btn {
+        background-color: rgb(206, 24, 203);
+        border: 2px solid rgb(206, 24, 203);
+      }
+    }
+    .general-otp-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}

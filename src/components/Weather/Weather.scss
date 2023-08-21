@@ -1,0 +1,197 @@
+.weather-app-container {
+  padding: 20px 0 0 0;
+  .search-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .input-item {
+      outline: none;
+      font-size: 16px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 2px solid rgb(114, 203, 96);
+      background-color: rgb(194, 240, 126);
+      color: #333;
+    }
+    .input-item-btn {
+      font-size: 16px;
+      padding: 5px 8px;
+      cursor: pointer;
+      border-radius: 10px;
+      &.btn-search {
+        background-color: rgb(114, 203, 96);
+        border: 4px solid rgb(114, 203, 96);
+        color: rgb(243, 232, 232);
+        font-weight: 500;
+        &:hover {
+          color: rgb(230, 220, 220);
+          background-color: rgb(101, 183, 85);
+        }
+      }
+    }
+  }
+  .loading {
+    display: flex;
+  }
+  .result-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    .not-found {
+      display: flex;
+    }
+    .result {
+      .title {
+      }
+      .result {
+      }
+      .woeId {
+        .woeId-link {
+          cursor: pointer;
+          color: green;
+          font-size: 600;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.weather-by-woe-id-container {
+  .list-weather {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 30px;
+    flex-wrap: wrap;
+    .detail-location {
+      display: flex;
+      justify-content: space-between;
+      gap: 80px;
+      align-items: flex-start;
+      .location-data {
+        padding-top: 10px;
+        .title {
+          font-size: 28px;
+          color: rgb(13, 135, 188);
+          font-weight: 400;
+        }
+        .time {
+          padding-top: 5px;
+          text-transform: lowercase;
+        }
+      }
+      .weather-day-container {
+        padding: 15px;
+        .date {
+          color: rgb(13, 135, 188);
+        }
+        .weather-state {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          gap: 0;
+          .icon-state {
+            padding-top: 5px;
+            img {
+              height: 80px;
+              width: 80px;
+            }
+          }
+          .name-state {
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 12px;
+          }
+        }
+        .wind {
+          .dir {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            background: url("../../assets/images/windarrow.svg");
+            background-size: 100% 100%;
+          }
+          .dir-nne {
+            transform: rotate(22.5deg);
+          }
+
+          .dir-ne {
+            transform: rotate(45deg);
+          }
+
+          .dir-ene {
+            transform: rotate(67.5deg);
+          }
+
+          .dir-e {
+            transform: rotate(90deg);
+          }
+
+          .dir-ese {
+            transform: rotate(112.5deg);
+          }
+
+          .dir-se {
+            transform: rotate(135deg);
+          }
+
+          .dir-sse {
+            transform: rotate(157.5deg);
+          }
+
+          .dir-s {
+            transform: rotate(180deg);
+          }
+
+          .dir-ssw {
+            transform: rotate(202.5deg);
+          }
+
+          .dir-sw {
+            transform: rotate(225deg);
+          }
+
+          .dir-wsw {
+            transform: rotate(247.5deg);
+          }
+
+          .dir-w {
+            transform: rotate(270deg);
+          }
+
+          .dir-wnw {
+            transform: rotate(292.5deg);
+          }
+
+          .dir-nw {
+            transform: rotate(315deg);
+          }
+
+          .dir-nnw {
+            transform: rotate(337.5deg);
+          }
+        }
+      }
+    }
+  }
+  .btn-back-wth-app {
+    display: block;
+    text-align: center;
+    .btn {
+      background-color: rgb(114, 203, 96);
+      border: 4px solid rgb(114, 203, 96);
+      color: rgb(243, 232, 232);
+      font-weight: 600;
+      border-radius: 2px;
+      padding: 8px 12px;
+      cursor: pointer;
+      &:hover {
+        color: rgb(230, 220, 220);
+        background-color: rgb(101, 183, 85);
+        border: 4px solid rgb(101, 183, 85);
+      }
+    }
+  }
+}
